@@ -25,7 +25,7 @@ body {
     background-repeat: no-repeat;
 }
 
-@media (min-width: 450px) {
+@media (min-width: 320px) {
     .up-content {
         background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.491)),
                     url("/images/CoverImage.jpg");
@@ -179,10 +179,10 @@ body {
 } */
 
 /* Form Section */
-#form-section h2 {
+/* #form-section h2 {
     font-size: 30px;
     font-weight: 700;
-}
+} */
 
 /* @media (min-width: 768px) {
      #form-section h2 {
