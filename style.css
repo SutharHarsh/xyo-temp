@@ -12,6 +12,18 @@ body {
     background: #e0f1f0;
 }
 
+.title1 {
+    font-family: "Actor", sans-serif;
+}
+
+.title2 {
+    font-family: "Actor", sans-serif;
+}
+
+.bt_text {
+    font-family: "Actor", sans-serif;
+}
+
 /* Hero Section Styling */
 .up-content {
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.491)),
