@@ -13,13 +13,13 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             number: "02",
             subheading: "Boost Confidence with Our Interactive Homework App!",
-            description: "Mistakes become learning moments, and speed increases with regular practice. Our app is the perfect companion for every student.",
+            description: "Gamification with actual gifts 🎁, coins 🪙, drachmas and cups 🏆 improves speed 🏃. Student motivation is at a maximum with our App 📈",
             imageUrl: "/images/homework.jpg"
         },
         {
             number: "03",
-            subheading: "Learn from the Best: Expert Teachers, Handpicked for Your Child",
-            description: "Our passionate educators focus on individual growth, ensuring each student gets the attention they deserve.",
+            subheading: "Expert Teachers 👩 handpicked for your child 🧒",
+            description: "Our passionate educators focus on individual growth, ensuring each student gets the attention.",
             imageUrl: "/images/teachers.jpg"
         },
         {
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             number: "05",
             subheading: "Monitor Progress, Plan the Future: Detailed Progress Reports",
-            description: "Stay informed with comprehensive reports, tracking your child's progress, and setting new goals for success.",
+            description: "Stay informed with comprehensive reports 📊 tracking your child’s progress 📈 and setting new goals for success 🥅. ",
             imageUrl: "/images/progress_report.jpg"
         }
     ];
@@ -149,6 +149,7 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
         .then(() => { window.location.reload(); })
         .catch(error => console.error('Error!', error.message))
     })
+
     }
 
 });
