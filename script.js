@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
             number: "03",
             subheading: "Expert Teachers 👩 handpicked for your child 🧒",
             description: "Our passionate educators focus on individual growth, ensuring each student gets the attention.",
-            imageUrl: "/images/teachers.jpg"
+            imageUrl: "/images/teachers.png"
         },
         {
             number: "04",
