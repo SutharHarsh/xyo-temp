@@ -28,6 +28,7 @@
                 }
             },
         }
+
     </script>
 </head>
 
@@ -38,7 +39,7 @@
         <div class="up-content lg:w-full h-1/2 sm:py-3 lg:bg-cover lg:py-14">
             <br class="text-[#17398f] leading-3">
             <span
-                class="title1 text-[#17398f] font-bold md:pl-5 md:text-5xl lg:text-7xl sm:text-3xl sm:pl-2 sm:text-2xl">Yooooooooo
+                class="title1 text-[#17398f] font-bold md:pl-5 md:text-5xl lg:text-7xl sm:text-3xl sm:pl-2 sm:text-2xl">
                 Your Child's Full</span><br>
             <span
                 class="title2 text-[#17398f] font-bold md:pl-5 md:text-5xl lg:text-7xl sm:text-3xl sm:pl-2 leading-5 sm:text-2xl">Math
@@ -101,8 +102,8 @@
             </div>
         </div>
         <!-- Section Wrapper -->
-        <section class="w-full  py-12 px-4 md:px-8">
-            <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <section class="w-full py-12 px-4 md:px-8">
+            <div class="max-w-6xl mx-auto flex flex-col lg:grid lg:grid-cols-2 gap-6">
 
                 <!-- Card 1 -->
                 <div class="bg-white rounded-xl shadow-lg p-6 border-l-4 border-blue-600">
@@ -173,24 +174,6 @@
                         </p>
                     </div>
                 </div>
-
-                <!-- Navigation Buttons -->
-                <!-- <div class="flex bg-[#c6e0de] justify-center lg:justify-start space-x-4 sm:space-x-6">
-                    <button id="prev" class="px-4 py-4 bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white rounded-full shadow-lg transform transition-all duration-300 ease-in-out lg:hover:-translate-y-1 lg:hover:scale-110">
-                        <span class="inline-block transform rotate-90">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-                            </svg>
-                        </span>
-                    </button>
-                    <button id="next" class="px-4 py-4 bg-gradient-to-l from-green-500 to-yellow-500 hover:from-green-600 hover:to-yellow-600 text-white rounded-full shadow-lg transform transition-all duration-300 ease-in-out lg:hover:-translate-y-1 lg:hover:scale-110">
-                        <span class="inline-block transform -rotate-90">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-                            </svg>
-                        </span>
-                    </button>
-                </div> -->
                 <div class="flex bg-[#c6e0de] justify-center lg:justify-start space-x-6 sm:space-x-8">
                     <button id="prev"
                         class="flex items-center justify-center w-12 h-12 bg-white border-2 border-[#5a9ca8] text-[#5a9ca8] rounded-full shadow-md transform transition-all duration-200 ease-in-out hover:bg-[#5a9ca8] hover:text-white hover:shadow-lg active:scale-110 focus:bg-[#5a9ca8] focus:text-white">
@@ -337,29 +320,284 @@
         </div>
     </section>
 
-    <section class="w-full bg-[#e0f1f0] py-5">
-        <div class="container mx-auto text-center">
-            <h2 class="text-[#17398f] text-xl font-semibold mb-4">Follow Us On</h2>
-            <div class="flex justify-center space-x-6 pb-10">
-                <!-- Facebook Icon -->
-                <a href="https://www.facebook.com/XyoOlympiad" target="_blank"
-                    class="text-[#3b5998] hover:text-blue-600">
-                    <!-- <i class="fab fa-facebook-f fa-2x"></i> -->
-                    <img src="/Icon/facebook.png" class="h-16" alt="">
-                </a>
-                <!-- Instagram Icon -->
-                <a href="https://www.instagram.com/xyomaths/" target="_blank"
-                    class="text-[#813b40] hover:text-pink-600">
-                    <img src="/Icon/instagram.png" class="h-16" alt="">
-                </a>
-                <!-- LinkedIn Icon -->
-                <a href="https://www.linkedin.com/company/myxyo-com" target="_blank"
-                    class="text-[#0077b5] hover:text-blue-700">
-                    <img src="/Icon/linkedin.png" class="h-16" alt="">
-                </a>
+    <!-- TESTIMONIAL SECTION -->
+
+    <div class="max-w-6xl mx-auto px-4 py-10">
+        <!-- Heading + Arrows -->
+        <div class="flex justify-between items-center mb-5">
+            <h2 class="text-2xl font-bold text-gray-800">What Our Clients Say</h2>
+            <div class="flex space-x-2">
+                <button id="prev-testimonial" class="p-2 bg-gray-300 rounded-full hover:bg-gray-400">&#8592;</button>
+                <button id="next-testimonial" class="p-2 bg-gray-300 rounded-full hover:bg-gray-400">&#8594;</button>
             </div>
         </div>
+
+        <!-- Slider Wrapper -->
+        <div class="overflow-hidden relative">
+            <div id="slider-testimonial" class="flex transition-transform duration-500 ease-in-out space-x-4">
+
+                <!-- Card 1 -->
+                <div class="min-w-full sm:min-w-[100%] lg:min-w-[33.33%] bg-white p-6 rounded-2xl shadow">
+                    <img src="images/Ms Mamta.jpeg" alt="Client 2" class="w-16 h-16 rounded-full mb-4 object-cover">
+                    <p class="text-gray-600 mb-3">"XYO Olympiad provides the best
+                        coaching in terms of concepts, practice
+                        and time management which is essential
+                        for competitive exams. We are glad that
+                        we sent our son to XYO as it helped him
+                        achieve international ranks in NSO, IMO
+                        and scored perfect centum in maths 10th
+                        CBSE exams. As a parent I am happy that
+                        he not only excelled in academics but
+                        XYO also groomed his personality. "</p>
+                    <h4 class="font-bold text-gray-800">Ms Mamta (Parent of Jayadeep Shanmugham)</h4>
+
+                </div>
+
+                <!-- Card 2 -->
+                <div class="min-w-full sm:min-w-[100%] lg:min-w-[33.33%] bg-white p-6 rounded-2xl shadow">
+                    <img src="/images/women.png" alt="Client 2"
+                        class="w-16 h-16 rounded-full mb-4 object-cover">
+                    <p class="text-gray-600 mb-3">"The guidance, math and science tricks
+                        given by the teachers at XYO helps the
+                        students to solve any problem. The
+                        teachers promote analytical thinking and
+                        help the students develop problem
+                        solving skills. The faculty is well aware
+                        about the different types of exams and
+                        the way to prepare for them. The batch
+                        sizes are optimum for learning and the
+                        teachers are dedicated to improve the
+                        students’ performance.
+                        "</p>
+                    <h4 class="font-bold text-gray-800">Ms Gauri Ghivari (mother of Rathin and Rachit)</h4>
+
+                </div>
+
+                <!-- Card 3 -->
+                <div class="min-w-full sm:min-w-[100%] lg:min-w-[33.33%] bg-white p-6 rounded-2xl shadow">
+                    <img src="images/Men.jpg" alt="Client 3"
+                        class="w-16 h-16 rounded-full mb-4 object-cover">
+                    <p class="text-gray-600 mb-3">"n 8th grade, I scored 34/60, the lowest I
+                        had scored in NSO. I enrolled myself for
+                        the science camp at XYO and got a
+                        strong and complete foundation of
+                        physics and chemistry. I also solved the
+                        papers of previous years .This proved to
+                        be helpful as I scored 49/60 in the exam
+                        for 9th grade, winning a gold medal. I am
+                        happy with my improvement in
+                        performance and am grateful to my
+                        teacher without whom I wouldn't have
+                        gotten this result. "</p>
+                    <h4 class="font-bold text-gray-800">Reyhan Aniz</h4>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="min-w-full sm:min-w-[100%] lg:min-w-[33.33%] bg-white p-6 rounded-2xl shadow">
+                    <img src="images/women.png" alt="Client 4"
+                        class="w-16 h-16 rounded-full mb-4 object-cover">
+                    <p class="text-gray-600 mb-3">"I have been going to XYO for two years
+                        now. I have gradually become better in
+                        maths and I now get full marks, this
+                        makes me really happy! Ms. Sheloney has
+                        changed my maths from tough to easy.
+                        My friends are really fascinated on how I
+                        do maths now and I even help people to
+                        solve sums. XYO has helped me a lot."</p>
+                    <h4 class="font-bold text-gray-800">Trissa</h4>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="min-w-full sm:min-w-[100%] lg:min-w-[33.33%] bg-white p-6 rounded-2xl shadow">
+                    <img src="images/women.png" alt="Client 1"
+                        class="w-16 h-16 rounded-full mb-4 object-cover">
+                    <p class="text-gray-600 mb-3 h-40 overflow-y-scroll">"Growing up, through school & college, I
+                        remember that Maths was the
+                        only subject I was never
+                        scared of or worried about. It required the least effort & I loved it. This was the same case
+                        with my
+                        husband whose mom was a Maths teacher. So, when it came to my elder daughter struggling to
+                        understand even the basic concepts of Maths that were apparently ‘taught’ in school, I knew
+                        something had to change. My husband & I couldn’t help enough because as it turns out, knowing
+                        something & being able to teach it are two very different things. Sheloney Ma’m was our Godsend.
+                        To think I was lucky enough to find a XYO center in the neighborhood right when we were going
+                        through the ‘Maths crisis’ at home still blows my mind. It was undeniably the turning point in
+                        the
+                        Maths journey of both my kids.
+                        My elder daughter Annita transformed from the clueless, counting on digits type of
+                        kid to the confident, Maths savvy girl who started applying the same confidence in other
+                        subjects
+                        such as Science - prompting her to write NSO & clear certain levels. Maths concepts also helped
+                        her ace Physics later on. She scored an overall of 96.4% in her 10th grade with 99% for Maths &
+                        91% for Physics. Needless to say, this would not have been so easy (it may have been possible
+                        but
+                        definitely not so easy) without our dear Sheloney Ma'm. And I don’t use the term 'dear' loosely
+                        here.
+                        She definitely is dear to us. XYO & Sheloney Ma'm not only focused on Mathematics. They made
+                        sure to look at the all-round growth of my kids. I have approached Sheloney Ma'm for help &
+                        advice on learning Science, picking the right syllabus & coaching, picking the right subjects to
+                        suit
+                        her, developing her character skills, developing her language skills & much more. Sheloney Ma'm
+                        has actually spent a lot of extra time talking to me & my child on the choices in my child's
+                        life
+                        while continuously encouraging her.
+                        Now as my younger daughter, Trissa, has joined Sheloney Ma'm on her journey
+                        with Maths, I can see the same transformation unfolding - from being unable to even count
+                        correctly on her fingers, she aces mental maths & even coaches others in class. All her friends
+                        tell
+                        her it's unbelievable how she knows all the answers for such a 'tough' subject. This in a matter
+                        of
+                        less than 2 years. While her journey is in the initial stages, I'm confident she will continue
+                        improving & enjoying the beauty of Maths - which is what I wanted for both my kids at the
+                        outset.
+                        XYO has provided the platform to continuously & systematically work on the
+                        analytical & logical thinking abilities for my kids. The teachers - both Sheloney Ma'm & Shalini
+                        Ma'm (who has stepped in many times in Sheloney Ma'm's absence) are both very capable &
+                        empathetic teachers. They are patient, kind & engaging - which is what kids need today. Needless
+                        to
+                        say, they are also experts at the subject & the art of teaching it to others. I'm grateful for
+                        all the
+                        efforts & to God for leading me to XYO. I wish them continued success."</p>
+                    <h4 class="font-bold text-gray-800">Smita Sonnie</h4>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <section class=" bg-blue-950 py-5">
+        <div class="container mx-auto text-center">
+            <!-- Main Container -->
+            <div class="relative w-full min-h-screen flex items-center justify-center py-4 ">
+                <!-- Contact Section -->
+                <section class="bg-blue-950 text-white w-full">
+                    <!-- Decorative Elements -->
+                    <div
+                        class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-orange-primary via-orange-secondary to-orange-primary">
+                    </div>
+
+                    <!-- Content Container -->
+                    <div class="relative px-8 py-1 lg:px-16 lg:py-2">
+                        <!-- Floating Decorative Elements -->
+                        <!-- <div
+                            class="absolute top-10 right-10 w-20 h-20 rounded-full bg-orange-primary opacity-10 animate-pulse-slow">
+                        </div>
+                        <div
+                            class="absolute bottom-10 left-10 w-16 h-16 rounded-full bg-orange-secondary opacity-10 animate-bounce-slow">
+                        </div> -->
+
+                        <!-- Header Section -->
+                        <div class="text-center mb-8 animate-on-scroll">
+                            <div class="inline-block">
+                                <h2
+                                    class="text-[#17398f] text-blue-800 text-center text-white font-bold tracking-[0.2em] uppercase">
+                                    Contact Us
+                                </h2>
+                                <div
+                                    class="w-20 h-1 bg-gradient-to-r from-orange-primary to-orange-secondary mx-auto rounded-full">
+                                </div>
+                            </div>
+                            <p class="text-black text-center text-white text-lg mt-6 max-w-2xl mx-auto leading-relaxed">
+                                Get in touch with us through any of our locations or digital channels
+                            </p>
+                        </div>
+
+                        <!-- Locations Grid -->
+                        <!-- <div class="grid md:grid-cols-2 gap-8 lg:gap-12 mb-16"> -->
+                        <!-- Location 1 -->
+
+
+
+                        <div
+                            class="glass-effect rounded-2xl p-2 hover-glow transition-all duration-500 animate-on-scroll">
+                            <div class="flex flex-col gap-4 w-full items-center   ">
+
+                                <h3 class="text-xl font-bold text-white text-shadow">XYO Maths Center</h3>
+                                <div class="flex flex-col gap-0 w-full items-center mb-3 ">
+
+                                    <p class="flex items-start">
+                                        <i class="fas fa-building text-orange-primary mr-3 mt-1 text-sm"></i>
+                                        <span>First Floor, No 1798, 20 Main</span>
+                                    </p>
+
+
+                                    <p class="flex items-start">
+                                        <i class="fas fa-road text-orange-primary mr-3 mt-1 text-sm "></i>
+                                        <span> 14 Cross HSR Layout, Sector 1</span>
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                    <!-- Contact Details -->
+                    <div class="glass-effect rounded-2xl p-8 mb-8 animate-on-scroll">
+                        <div class="grid md:grid-cols-2 gap-3">
+                            <!-- Phone -->
+                            <div class="flex flex-col text-center items-center group cursor-pointer">
+                                <p class="text-gray-400 text-sm font-medium uppercase tracking-wide">Phone</p>
+                                <a href="tel:+916360456026"
+                                    class="text-xl font-semibold text-white hover:text-orange-primary transition-colors duration-300">
+                                    +91-9901558900
+                                </a>
+                            </div>
+
+                            <!-- Email -->
+                            <div class="cursor-pointer">
+                                <div>
+                                    <p class="text-gray-400 text-sm font-medium uppercase tracking-wide">Email</p>
+                                    <a href="mailto:info@unidemyglobal.com"
+                                        class="text-xl font-semibold text-orange-primary hover:text-orange-secondary transition-colors duration-300">
+                                        xyoolympiad@gmail.com
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Follow Us Section -->
+                    <div class="text-center animate-on-scroll">
+                        <div class="inline-block mb-8">
+                            <h3 class="text-orange-primary text-sm font-bold tracking-[0.3em] mb-4 uppercase">
+                                <i class="fas fa-share-alt mr-2"></i>
+                                Follow Us
+                            </h3>
+                            <div
+                                class="w-16 h-1 bg-gradient-to-r from-orange-primary to-orange-secondary mx-auto rounded-full">
+                            </div>
+                        </div>
+
+                        <!-- Social Media Icons -->
+                        <div class="flex justify-center space-x-6">
+                            <!-- Facebook Icon -->
+                            <a href="https://www.facebook.com/XyoOlympiad" target="_blank"
+                                class="text-[#3b5998] hover:text-blue-600">
+                                <!-- <i class="fab fa-facebook-f fa-2x"></i> -->
+                                <img src="/Icon/facebook.png" class="h-16" alt="">
+                            </a>
+                            <!-- Instagram Icon -->
+                            <a href="https://www.instagram.com/xyomaths/" target="_blank"
+                                class="text-[#813b40] hover:text-pink-600">
+                                <img src="/Icon/instagram.png" class="h-16" alt="">
+                            </a>
+                            <!-- LinkedIn Icon -->
+                            <a href=" https://www.youtube.com/@XYOMaths5432" target="_blank"
+                                class="text-[#0077b5] hover:text-blue-700">
+                                <img src="/Icon/Youtube.webp" class="h-16" alt="">
+                            </a>
+                            <a href="https://www.linkedin.com/company/myxyo-com" target="_blank"
+                                class="text-[#0077b5] hover:text-blue-700">
+                                <img src="/Icon/linkedin.png" class="h-16" alt="">
+                            </a>
+                        </div>
+                    </div>
+            </div>
     </section>
+    </div>
+
 
 
     <script src="navtech_script.js"></script>

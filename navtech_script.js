@@ -7,31 +7,31 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             number: "01",
             subheading: "Tailored for Success in ICSE, CBSE, and State Boards",
-            description: "We cover all major curricula, helping your child thrive in any school setting with a solid foundation.",
+            description: "",
             imageUrl: "/images/img1.jpg"
         },
         {
             number: "02",
-            subheading: "Boost Confidence with Our Interactive Homework App!",
-            description: "Gamification with actual gifts 🎁, coins 🪙, drachmas and cups 🏆 improves speed 🏃. Student motivation is at a maximum with our App 📈",
+            subheading: "Interest level in Maths is sustained with our gamified interactive Homework App.",
+            description: "",
             imageUrl: "/images/homework.jpg"
         },
         {
             number: "03",
             subheading: "Expert Teachers 👩 handpicked for your child 🧒",
-            description: "Our passionate educators focus on individual growth, ensuring each student gets the attention.",
+            description: "",
             imageUrl: "/images/teachers.png"
         },
         {
             number: "04",
             subheading: "Small Batches, Big Results: Only 4 Students per Class!",
-            description: "Personalized attention in an engaging, small-group environment fosters deep understanding and meaningful peer interaction.",
+            description: "",
             imageUrl: "/images/small_batches.jpg"
         },
         {
             number: "05",
-            subheading: "Monitor Progress, Plan the Future: Detailed Progress Reports",
-            description: "Stay informed with comprehensive reports 📊 tracking your child’s progress 📈 and setting new goals for success 🥅. ",
+            subheading: "Monitor Progress and set new goals for success with real-time progress tracker.",
+            description: "",
             imageUrl: "/images/progress_report.jpg"
         }
     ];
@@ -81,6 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.getElementById('prev').addEventListener('click', () => {
         currentSlide = (currentSlide === 0) ? slides.length - 1 : currentSlide - 1;
+        // console.log(currentSlide);
         showSlide(currentSlide);
     });
 
@@ -142,14 +143,52 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
         const form = document.forms['contact-form']
 
 
-    form.addEventListener('submit', e => {
-        e.preventDefault()
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => alert("Thank you! your form is submitted successfully." ))
-        .then(() => { window.location.reload(); })
-        .catch(error => console.error('Error!', error.message))
-    })
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => alert("Thank you! your form is submitted successfully."))
+                .then(() => { window.location.reload(); })
+                .catch(error => console.error('Error!', error.message))
+        })
 
     }
 
 });
+
+
+// Testimonials Card Arrow Logic
+
+const slider = document.getElementById('slider-testimonial');
+const prev = document.getElementById('prev-testimonial');
+const next = document.getElementById('next-testimonial');
+let currentIndex = 0;
+
+
+function updateSlider() {
+    const screenWidth = window.innerWidth;
+    let itemsPerView = 1; // default for mobile
+    if (screenWidth >= 1024) {
+        itemsPerView = 3; // desktop
+    } else if (screenWidth >= 640) {
+        itemsPerView = 2; // tablet
+    }
+    const cardWidth = slider.querySelector('div').offsetWidth + 16; // card + gap
+    slider.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+}
+
+next.addEventListener('click', () => {
+    if (currentIndex < slider.children.length - 1) {
+        currentIndex++;
+        updateSlider();
+    }
+});
+
+prev.addEventListener('click', () => {
+    if (currentIndex > 0) {
+        currentIndex--;
+        updateSlider();
+    }
+});
+
+window.addEventListener('resize', updateSlider);
+updateSlider();
