@@ -1,54 +1,64 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Actor&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Actor&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    background: #e0f1f0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  background: #e0f1f0;
 }
 
 .title1 {
-    font-family: "Actor", sans-serif;
+  font-family: "Actor", sans-serif;
 }
 
 .title2 {
-    font-family: "Actor", sans-serif;
+  font-family: "Actor", sans-serif;
 }
 
 .bt_text {
-    font-family: "Actor", sans-serif;
+  font-family: "Actor", sans-serif;
 }
 
 /* Hero Section Styling */
 .up-content {
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.491)),
-                url("/images/CoverImage.jpg");
-    /* height: auto;
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.491)
+    ),
+    url("/images/CoverImage.jpg");
+  /* height: auto;
     width: auto; */
-    /* padding-top: 20px;
+  /* padding-top: 20px;
     padding-bottom: 40px; */
-    background-size:cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 0px 0px 40px 40px;
+  box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.3);
 }
 
 @media (min-width: 320px) {
-    .up-content {
-        background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.491)),
-                    url("/images/CoverImage.jpg");
-        /* height: auto;
+  .up-content {
+    background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.2),
+        rgba(255, 255, 255, 0.491)
+      ),
+      url("/images/CoverImage.jpg");
+    /* height: auto;
         width: auto; */
-        /* padding-top: 20px;
+    /* padding-top: 20px;
         padding-bottom: 40px; */
-        background-size:100vh;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
+    background-size: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
 
 /* section div span {
@@ -60,7 +70,6 @@ body {
     font-family: "Actor", sans-serif;
     padding-bottom: 40px;
 } */
-
 
 /* @media (min-width: 768px) {
     .up-content h2 {
@@ -203,39 +212,37 @@ body {
 } */
 
 button:hover {
-    transform: translateY(-2px);
-    transition: all 0.2s ease-in-out;
+  transform: translateY(-2px);
+  transition: all 0.2s ease-in-out;
 }
-
-
 
 /* Slider Animations */
 @keyframes fadeSlideIn {
-    0% {
-        opacity: 0;
-        transform: translateX(100px) scale(0.9);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0) scale(1);
-    }
+  0% {
+    opacity: 0;
+    transform: translateX(100px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
 }
 
 @keyframes fadeSlideOut {
-    0% {
-        opacity: 1;
-        transform: translateX(0) scale(1);
-    }
-    100% {
-        opacity: 0;
-        transform: translateX(-100px) scale(0.9);
-    }
+  0% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-100px) scale(0.9);
+  }
 }
 
 .fadeIn {
-    animation: fadeSlideIn 0.5s ease-in-out forwards;
+  animation: fadeSlideIn 0.5s ease-in-out forwards;
 }
 
 .fadeOut {
-    animation: fadeSlideOut 0.5s ease-in-out forwards;
+  animation: fadeSlideOut 0.5s ease-in-out forwards;
 }
